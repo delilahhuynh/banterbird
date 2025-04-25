@@ -1,0 +1,119 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* Mint green for "admin" */
+#username {
+    color: #98ff98; /* mint green */
+    font-weight: bold;
+}
+
+/* Accent color: hot pink */
+button {
+    padding: 10px 25px;
+    background-color: #ff69b4; /* hot pink */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e0559e;
+}
+
+/* Add a hot pink line below headings */
+h3 {
+    border-bottom: 2px solid #ff69b4;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/* Make post usernames hot pink for fun */
+.post .username {
+    color: #ff69b4;
+    font-weight: bold;
+}
+
+body {
+    /* Pretty pink gradient background */
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #f7bbc7);
+    color: white;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    font-family: 'Ribeye', serif;
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* Username display */
+#username {
+    color: white;
+    font-weight: bold;
+}
+
+/* New Post Section */
+textarea#postInput {
+    width: 100%;
+    min-height: 80px;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    resize: vertical;
+    background-color: #ffb3d9; /* Soft pink for text area */
+    color: white;
+}
+
+textarea#postInput::placeholder {
+    color: #fff5f7;
+}
+
+button {
+    padding: 10px 25px;
+    background-color: #ff4d6d;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e63956;
+}
+
+/* Feed styling */
+#feed {
+    margin-top: 20px;
+}
+
+.post {
+    background-color: #f6c2d0; /* Light pink for posts */
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.username {
+    color: white;
+    font-weight: bold;
+}
+
+.timestamp {
+    color: #fbe8ec;
+    font-size: 0.85rem;
+}
