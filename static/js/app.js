@@ -1,4 +1,8 @@
-const username = "admin";
+let username = localStorage.getItem("username") 
+if (!username) {
+  window.location.href = "/login";
+
+}
 
 function renderPost(post, isNew = false) {
   const template = document
@@ -31,6 +35,8 @@ async function submitPost() {
 }
 window.onload = async () => {
   try {
+    document.getElementById("Username").innerText = username;
+    
     const response = await fetch("/api/posts");
     const posts = await response.json();
     posts.forEach((post) => renderPost(post));
